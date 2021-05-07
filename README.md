@@ -32,7 +32,7 @@
 
 ## Holdout experiments
 
-To generate holdout data, run the experiments and evaluate peformance, please refer to holdout/holdout.README.
+To generate holdout data, run the experiments and evaluate peformance, please refer to holdout/README.md
 
 ## Figures for manuscript
 1. Figure 2 and extended:
