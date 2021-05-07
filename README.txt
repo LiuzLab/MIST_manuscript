@@ -1,23 +1,23 @@
-This repository contains necessary scirpts to reproduce all the results and figures in the MIST manuscript.
+# This repository contains necessary scirpts to reproduce all the results and figures in the MIST manuscript.
 
-# Preparing MIST
+## Preparing MIST
 
 	git clone https://github.com/linhuawang/MIST.git
 
-# Data for manuscripts
+## Data for manuscripts
 	
-	## raw count data (without imputation): 
+	### raw count data (without imputation): 
 
 		* ./data/MouseWT/raw.csv
 		* ./data/MouseAD/raw.csv
 		* ./data/Melanoma/raw.csv
 		* ./data/Prostate/raw.csv
 
-	## Mouse brain ST meta data: 
+	### Mouse brain ST meta data: 
 
 		* ./data/spot_meta.tsv
 
-	## imputed data
+	### imputed data
 
 		1. MIST imputed data
 
@@ -31,11 +31,11 @@ This repository contains necessary scirpts to reproduce all the results and figu
 			* ./data/[sample_name]/[sample_name]_[method_name].csv
 
 
-# Holdout experiments
+## Holdout experiments
 
 To generate holdout data, run the experiments and evaluate peformance, please refer to holdout/holdout.README.
 
-# Figures for manuscript
+## Figures for manuscript
 
 	1. Figure 2 and extended:
 
