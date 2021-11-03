@@ -1,10 +1,10 @@
-#This repository contains necessary scirpts to reproduce all the results and figures in the MIST manuscript.
+# This repository contains necessary scirpts to reproduce all the results and figures in the MIST manuscript.
 
-##Clone MIST to the current directory
+## Clone MIST to the current directory
 
 	git clone https://github.com/linhuawang/MIST.git
 
-##Dependencies
+## Dependencies
   * python=3.7
   * pandas=0.25.3
   * numpy=1.18.5
@@ -17,13 +17,13 @@
   *	anndata=0.7.6
   * magic-impute
 
-##Run MIST
+## Run MIST
 
 	bash run.sh
 
 This script includes all command lines that are needed to generate imputed data and holdout experiment results. Running MIST for every sample using 10 cpus takes about an hour. Running the whole bash script will take 1 - 2 days with 10 cpus.
 
-##Data for manuscripts
+## Data for manuscripts
 	
 ### raw count data (without imputation): 
 * ./data/MouseWT/raw.csv
@@ -36,7 +36,7 @@ Resulted data will be available by running the bash scripts mentioned above. Spe
 ### Mouse brain ST meta data: 
 * ./data/spot_meta.tsv
 
-###Imputed data
+### Imputed data
 
 1. MIST imputed data
 	Running each sample takes too much time with one core, 'n=10' will take about an hour to execute. 
@@ -53,11 +53,11 @@ Resulted data will be available by running the bash scripts mentioned above. Spe
 		* ./data/[sample_name]/[method_name]_imputed.csv
 
 
-##Holdout experiments
+## Holdout experiments
 
 To generate holdout data, run the experiments and evaluate peformance, please refer to holdout/holdout.README.
 
-##Figures for manuscript
+## Figures for manuscript
 
 1. Figure 2 and extended (run in the listed order):
 * Figure 2 more clustering (scanpy).ipynb
