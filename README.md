@@ -43,19 +43,22 @@ Resulted data will be available by running the bash scripts mentioned above. Spe
 
 			python3 MIST.py -f ./data/[sample_name]/raw.csv -o ./data/[sample_name]/MIST_imputed.csv -l cpm -n 10
 	The following files will be generated using the above command:
+
 		* ./data/[sample_name]_cpm_imputed.csv
 		* ./data/[sample_name]_imputed_cluster_info.csv
+
 
 2. To get imputed data from other imputation method, run the following script:
 
 		python3 run_other_imputers.py [path_to_fn] [method_name]
 	The following files will be generated using the above command:
+	
 		* ./data/[sample_name]/[method_name]_imputed.csv
 
 
 ## Holdout experiments
 
-To generate holdout data, run the experiments and evaluate peformance, please refer to holdout/holdout.README.
+The holdout experiments were also included in the above bash scripts. Please refer to holdout/holdout.README for more information.
 
 ## Figures for manuscript
 
