@@ -1,6 +1,6 @@
 This repository contains necessary scirpts to reproduce all the results and figures in the MIST manuscript.
 
-# Preparing MIST
+# Clone MIST to the current directory
 
 	git clone https://github.com/linhuawang/MIST.git
 
@@ -17,6 +17,12 @@ This repository contains necessary scirpts to reproduce all the results and figu
   *	anndata=0.7.6
   * magic-impute
 
+# Run MIST
+
+	bash run.sh
+
+	This script includes all command lines that are needed to generate imputed data and holdout experiment results. Running MIST for every sample using 10 cpus takes about an hour. Running the whole bash script will take 1 - 2 days with 10 cpus.
+
 # Data for manuscripts
 	
 	## raw count data (without imputation): 
@@ -26,11 +32,13 @@ This repository contains necessary scirpts to reproduce all the results and figu
 		* ./data/Melanoma/raw.csv
 		* ./data/Prostate/raw.csv
 
+		Resulted data will be available by running the bash scripts mentioned above. Specific commands for every pieces of data are also listed below in the corresponding sections.
+
 	## Mouse brain ST meta data: 
 
 		* ./data/spot_meta.tsv
 
-	## imputed data
+	## Imputed data
 
 		1. MIST imputed data
 
